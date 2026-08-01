@@ -16,11 +16,111 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.foodbucket"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Inter",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Thin.ttf",
+                    "weight": 100
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-ExtraLight.ttf",
+                    "weight": 200
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Light.ttf",
+                    "weight": 300
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Regular.ttf",
+                    "weight": 400
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Medium.ttf",
+                    "weight": 500
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-SemiBold.ttf",
+                    "weight": 600
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Bold.ttf",
+                    "weight": 700
+                  }
+                ]
+              },
+              {
+                "fontFamily": "ComicSans",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/comic/Ldfcomicsans-jj7l.ttf",
+                    "weight": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": [
+              {
+                "fontFamily": "Inter",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Thin.ttf",
+                    "weight": 100
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-ExtraLight.ttf",
+                    "weight": 200
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Light.ttf",
+                    "weight": 300
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Regular.ttf",
+                    "weight": 400
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Medium.ttf",
+                    "weight": 500
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-SemiBold.ttf",
+                    "weight": 600
+                  },
+                  {
+                    "path": "./assets/fonts/inter/Inter_18pt-Bold.ttf",
+                    "weight": 700
+                  }
+                ]
+              },
+              {
+                "fontFamily": "ComicSans",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/comic/Ldfcomicsans-jj7l.ttf",
+                    "weight": 400
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    ]
   }
 }
