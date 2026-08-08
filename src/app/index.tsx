@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Text } from "@/components/ui/text";
 import { useThemeToggle } from "@/hooks/useThemeToggle";
 import { useLanguage } from "@/hooks/useLanguageToogle";
-import { useTranslation } from "react-i18next";
 
 
 function Home() {
