@@ -1,0 +1,13 @@
+{
+  "common": {
+    "welcome": "Hoş geldin",
+    "login": "Giriş Yap",
+    "logout": "Çıkış Yap",
+    "cancel": "İptal",
+    "save": "Kaydet"
+  },
+  "home": {
+    "title": "Ana Sayfa",
+    "description": "Uygulamaya hoş geldin."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "login": "Login",
+    "logout": "Logout",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "home": {
+    "title": "Home",
+    "description": "Welcome to the application."
+  }
+}

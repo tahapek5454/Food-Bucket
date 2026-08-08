@@ -120,6 +120,15 @@
             ]
           }
         }
+      ],
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": ["tr", "en"],
+            "android": ["tr", "en"]
+          }
+        }
       ]
     ]
   }
