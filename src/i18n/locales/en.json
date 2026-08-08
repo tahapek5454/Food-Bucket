@@ -4,10 +4,17 @@
     "login": "Login",
     "logout": "Logout",
     "cancel": "Cancel",
-    "save": "Save"
+    "save": "Save",
+    "estimatedArrivalTimeShort": "EAT",
+    "minuteShort": "min ",
+    "hourShort": "h",
+    "changeTheme": "Change Theme",
+    "changeLanguage": "Change Language"
   },
   "home": {
     "title": "Home",
-    "description": "Welcome to the application."
+    "description": "Welcome to the application.",
+    "address": "Address",
+    "tempAddress": "12 Main St, Green Ave New York, NY 10001"
   }
 }

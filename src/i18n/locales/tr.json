@@ -4,10 +4,18 @@
     "login": "Giriş Yap",
     "logout": "Çıkış Yap",
     "cancel": "İptal",
-    "save": "Kaydet"
+    "save": "Kaydet",
+    "estimatedArrivalTimeShort": "TVS",
+    "minuteShort": "dk",
+    "hourShort": "sa",
+    "changeTheme": "Temayı Değiştir",
+    "changeLanguage": "Dili Değiştir"
   },
   "home": {
     "title": "Ana Sayfa",
-    "description": "Uygulamaya hoş geldin."
+    "description": "Uygulamaya hoş geldin.",
+    "address": "Adres",
+    "tempAddress": "Atatürk Cd. No:12, Ada Sk. İstanbul, TR 34000"
+
   }
 }

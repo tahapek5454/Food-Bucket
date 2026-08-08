@@ -1,24 +1,23 @@
 import { View } from "react-native";
-import { PortalHost } from "@rn-primitives/portal";
 import { Button } from "@/components/ui/button";
 import { Text } from "@/components/ui/text";
-import { useThemeToggle } from "@/hooks/useThemeToggle";
-import { useLanguage } from "@/hooks/useLanguageToogle";
-
+import { useTheme } from "@/hooks/useTheme";
+import { useLanguage } from "@/hooks/useLanguage";
+import HomeHeader from "@/components/home/homeHeader";
 
 function Home() {
-  const { toggleTheme } = useThemeToggle();
+  const { toggleTheme } = useTheme();
   const { toggleLanguage, t } = useLanguage();
   return (
-    <View className="flex-1 flex-col space-y-4 items-center justify-center bg-background">
-      <Text className="text-xl font-bold text-foreground">{t("home.title")}</Text>
+    <View className="flex-1 flex-col space-y-4 items-center justify-start  bg-background">
+      <HomeHeader />
+
       <Button onPress={toggleTheme}>
-        <Text className="font-inter">Dil Değiştir</Text>
+        <Text>{t("common.changeTheme")}</Text>
       </Button>
       <Button onPress={toggleLanguage}>
-        <Text className="font-comic">Dil Değiştir</Text>
+        <Text>{t("common.changeLanguage")}</Text>
       </Button>
-      <PortalHost />
     </View>
   );
 }

@@ -129,7 +129,9 @@
             "android": ["tr", "en"]
           }
         }
-      ]
+      ],
+      "@react-native-vector-icons/fontawesome-free-solid",
+      "@react-native-vector-icons/evil-icons"
     ]
   }
 }
