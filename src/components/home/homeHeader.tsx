@@ -10,7 +10,7 @@ function HomeHeader() {
   const { currentTheme } = useTheme();
   
   return (
-    <View className="flex flex-row w-full h-[5%] mt-6 bg-background">
+    <View className="flex flex-row w-full min-h-[40px] mt-6 bg-orange-600">
       <View className="flex-[3] flex-row gap-x-4 bg-foreground rounded-r-3xl justify-center items-center p-2">
         <FontAwesomeFreeSolid name="home" size={15} color={currentTheme === "light" ? "white" : "black"} />
         <Text className="font-bold text-background text-xs">
@@ -24,7 +24,7 @@ function HomeHeader() {
         </Text>
         <FontAwesomeFreeSolid name="chevron-right" size={15} color={currentTheme === "light" ? "white" : "black"} />
       </View>
-      <View className="flex-[1] bg-background flex-col justify-center items-center gap-y-1">
+      <View className="flex-[1] bg-orange-600 flex-col justify-center items-center gap-y-1">
         <Text className="text-xs font-normal text-foreground">
           {t("common.estimatedArrivalTimeShort")}
         </Text>
