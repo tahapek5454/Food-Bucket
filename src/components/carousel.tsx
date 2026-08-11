@@ -1,6 +1,6 @@
-import { useState } from "react"
-import { FlatList, Image, ImageSourcePropType, Dimensions, View, ActivityIndicator } from "react-native"
+import { FlatList, ImageSourcePropType, Dimensions } from "react-native"
 import { JSX } from "react/jsx-runtime"
+import LazyImage from "./lazyImage"
 
 type CarouselProps = {
     data: ImageSourcePropType[],
@@ -12,26 +12,6 @@ type CarouselProps = {
 }
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window")
-
-function LazyImage({ source, width, height }: { source: ImageSourcePropType; width: number; height: number }) {
-    const [loading, setLoading] = useState(true)
-
-    return (
-        <View style={{ width, height }}>
-            <Image
-                source={source}
-                style={{ width, height }}
-                resizeMode="cover"
-                onLoadEnd={() => setLoading(false)}
-            />
-            {loading && (
-                <View style={{ position: "absolute", width, height, justifyContent: "center", alignItems: "center" }}>
-                    <ActivityIndicator size="large" />
-                </View>
-            )}
-        </View>
-    )
-}
 
 function Carousel({
     data,
