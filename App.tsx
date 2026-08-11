@@ -1,6 +1,6 @@
 import { StatusBar } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import NativeBottomTab from "@/components/nativeBottomTab";
+import BottomTab from "@/components/navigator/bottomTab";
 import { PortalHost } from "@rn-primitives/portal";
 import { useTheme } from "@/hooks/useTheme";
 import "@/i18n";
@@ -14,7 +14,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <NativeBottomTab />
+      <BottomTab />
       <PortalHost />
     </NavigationContainer>
   );
