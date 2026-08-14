@@ -1,13 +1,14 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import HomeNavigator from "@/components/navigator/home";  
 import { PlatformPressable } from "@react-navigation/elements";
 import { Platform } from "react-native";
-import Home from "@/app/index";
 import Profile from "@/app/profile/index";
 import Palette from "@/app/palette/index";
 import Search from "@/app/search/index";
 import FontAwesomeFreeSolid from "@react-native-vector-icons/fontawesome-free-solid";
 import { useTheme } from "@/hooks/useTheme";
 import BottomTabBarMainButton from "@/components/navigator/custom/bottomTabBarMainButton";
+
 const Tab = createBottomTabNavigator();
 
 function BottomTab() {
@@ -15,7 +16,7 @@ function BottomTab() {
 
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="HomeNavigator"
       screenOptions={{
         tabBarShowLabel: false,
         tabBarActiveTintColor: "#ea580c",
@@ -50,8 +51,8 @@ function BottomTab() {
       }}
     >
       <Tab.Screen
-        name="Home"
-        component={Home}
+        name="HomeNavigator"
+        component={HomeNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
             <FontAwesomeFreeSolid name="home" size={size} color={color} />
@@ -68,8 +69,8 @@ function BottomTab() {
         }}
       />
       <Tab.Screen
-        name="Main"
-        component={Home}
+        name="MainNavigator"
+        component={HomeNavigator}
         options={{
           tabBarButton: (props) => <BottomTabBarMainButton {...props} />
         }}
