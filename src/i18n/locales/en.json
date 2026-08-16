@@ -16,5 +16,8 @@
     "description": "Welcome to the application.",
     "address": "Address",
     "tempAddress": "12 Main St, Green Ave New York, NY 10001"
+  },
+  "products": {
+    "title": "Products"
   }
 }
