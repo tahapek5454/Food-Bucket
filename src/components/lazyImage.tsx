@@ -10,7 +10,7 @@ function LazyImage({ width, height, style, resizeMode = "cover", onLoadEnd, ...r
     const [loading, setLoading] = useState(true)
 
     return (
-        <View style={{ width, height }}>
+        <View style={{ width, height, pointerEvents: "none" }}>
             <Image
                 {...rest}
                 style={[{ width, height }, style]}

@@ -18,6 +18,7 @@
     "tempAddress": "Atatürk Cd. No:12, Ada Sk. İstanbul, TR 34000"
   },
   "products": {
-    "title": "Ürünler"
+    "title": "Ürünler",
+    "allProducts": "Tüm Ürünler"
   }
 }
