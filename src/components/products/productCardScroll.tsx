@@ -32,6 +32,7 @@ function ProductCardScroll({ categoryId }: ProductCardScrollProps) {
         >
           {filteredProducts?.map((product, index) => (
             <ProductCard
+              id={product.id}
               key={index}
               image={{ uri: product.image }}
               name={isTurkish ? product.name : product.nameEn}
