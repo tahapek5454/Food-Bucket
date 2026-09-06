@@ -19,6 +19,7 @@
   },
   "products": {
     "title": "Ürünler",
-    "allProducts": "Tüm Ürünler"
+    "allProducts": "Tüm Ürünler",
+    "productDetail": "Ürün Detayı"
   }
 }

@@ -9,8 +9,11 @@ import { Text } from "@/components/ui/text";
 import LazyImage from "@/components/lazyImage";
 import { ImageSourcePropType, useWindowDimensions, View } from "react-native";
 import { FontAwesomeFreeSolid } from "@react-native-vector-icons/fontawesome-free-solid";
+import { useNavigation } from "@react-navigation/native";
+import { HomeStackNavigationProp } from "../navigator/home";
 
 export type ProductCardProps = {
+  id: string;
   image: ImageSourcePropType;
   name: string;
   quantity: string;
@@ -19,6 +22,7 @@ export type ProductCardProps = {
 };
 
 function ProductCard({
+  id,
   image,
   name,
   quantity,
@@ -26,12 +30,16 @@ function ProductCard({
   discountedPrice,
 }: ProductCardProps) {
   const { width: windowWidth } = useWindowDimensions();
+  const navigation = useNavigation<HomeStackNavigationProp>();
   const cardWidth = windowWidth * 0.28;
   const cardHeight = cardWidth * 0.75 + 110;
 
   return (
     <View className="relative mx-2">
       <RippledPressable
+        onPress={() => {
+          navigation.navigate("ProductDetail", { productId: id });
+        }}  
       >
         <Card
           className=" gap-0 py-0 "

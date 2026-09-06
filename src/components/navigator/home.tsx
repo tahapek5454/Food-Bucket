@@ -2,6 +2,7 @@ import {
   createStackNavigator,
   StackNavigationProp,
 } from "@react-navigation/stack";
+import ProductDetail from "@/app/products/[productDetail]/index";
 import { FontAwesomeFreeSolid } from "@react-native-vector-icons/fontawesome-free-solid";
 import Home from "@/app/index";
 import Products from "@/app/products";
@@ -14,12 +15,10 @@ import { useLanguage } from "@/hooks/useLanguage";
 export type HomeRootStackParamList = {
   Home: undefined;
   Products: { categoryId: string };
+  ProductDetail: { productId: string }
 };
 
-export type ProductsScreenProp = StackNavigationProp<
-  HomeRootStackParamList,
-  "Products"
->;
+export type HomeStackNavigationProp = StackNavigationProp<HomeRootStackParamList>;
 
 const Stack = createStackNavigator<HomeRootStackParamList>();
 
@@ -64,6 +63,25 @@ function HomeNavigator() {
           headerTitle: (props) => (
             <Text className="text-foreground font-bold">{t("products.title")}</Text>
           ),
+        }}
+      />
+      <Stack.Screen
+        name="ProductDetail"
+        component={ProductDetail}
+        options={{
+          headerTitle: (props) => (
+            <Text className="text-foreground font-bold">{t("products.productDetail")}</Text>
+          ),
+          headerRight: (props) => (
+            <FontAwesomeFreeSolid
+              name="heart"
+              size={24}
+              color={currentTheme === "light" ? "black" : "white"}
+            />
+          ),
+          headerRightContainerStyle: {
+            paddingRight: 10,
+          }
         }}
       />
     </Stack.Navigator>

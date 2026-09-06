@@ -6,9 +6,7 @@ import {
 import { Text } from "@/components/ui/text";
 import LazyImage from "@/components/lazyImage";
 import { useNavigation } from "@react-navigation/native";
-import type {
-  ProductsScreenProp,
-} from "@/components/navigator/home";
+import type { HomeStackNavigationProp } from "@/components/navigator/home";
 
 
 type CategoryItemProps = {
@@ -24,8 +22,8 @@ const { width: windowWidth, height: windowHeight } = Dimensions.get("window");
 function CategoryItem({ id, image, title, width, height }: CategoryItemProps) {
   const itemWidth = width ?? windowWidth * 0.18;
   const itemHeight = height ?? windowHeight * 0.18;
-  const navigation = useNavigation<ProductsScreenProp>();
-
+  const navigation = useNavigation<HomeStackNavigationProp>();
+  
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("Products", { categoryId: id })}

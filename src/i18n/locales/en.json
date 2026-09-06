@@ -19,6 +19,7 @@
   },
   "products": {
     "title": "Products",
-    "allProducts": "All Products"
+    "allProducts": "All Products",
+    "productDetail": "Product Detail"
   }
 }

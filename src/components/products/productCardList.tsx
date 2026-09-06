@@ -2,7 +2,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useEffect, useState } from 'react';
 import products from "@/assets/examples/products";
 import type { Product } from "@/types/product";
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import ProductCard from '@/components/products/productCard';
 
 const GAP = 2
@@ -27,6 +27,7 @@ function ProductCardList({ categoryId }: ProductCardListProps) {
      <View className="flex-row flex-wrap mt-2" style={{ gap: GAP * 2, paddingHorizontal: GAP }}>
       {filteredProducts?.map((product, index) => (
             <ProductCard
+              id={product.id}
               key={index}
               image={{ uri: product.image }}
               name={isTurkish ? product.name : product.nameEn}

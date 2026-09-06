@@ -1,6 +1,6 @@
 import { Dimensions, ScrollView } from "react-native";
 import type { SubCategory } from "@/types/category";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import categories from "@/assets/examples/categories";
 import TypeFilterItem from "./typeFilterItem";
